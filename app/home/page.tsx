@@ -36,7 +36,7 @@ const Home: React.FC = () => {
   const [cartItemCount, setCartItemCount] = useState(0);
 
   useEffect(() => {
-    const token = localStorage.getItem('authToken');
+    const token = localStorage?.getItem('authToken');
     fetch('http://tanveer2719.pythonanywhere.com/api/getbooks/')
       .then(response => response.json())
       .then(data => {

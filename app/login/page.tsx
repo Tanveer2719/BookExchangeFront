@@ -5,7 +5,7 @@ import { useState } from "react";
 import { fetchUsers } from "../sanity/sanity-utils";
 
 async function fetchUserInfo() {
-  const token = localStorage.getItem('authToken');
+  const token = localStorage?.getItem('authToken');
 
   const response = await fetch('http://tanveer2719.pythonanywhere.com/api/userinfo/', {
     method: 'GET',

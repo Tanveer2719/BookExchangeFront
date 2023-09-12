@@ -39,7 +39,7 @@ function BookDetails() {
   }
 
 const goToBuyPage = () => {
-  const token = localStorage.getItem('authToken');
+  const token = localStorage?.getItem('authToken');
   // console.log(token);
   if (token) {
     // User has a valid token, navigate to the buy page

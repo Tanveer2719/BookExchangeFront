@@ -42,7 +42,7 @@ function BUY(){
       bookId: id,
     };
     try {
-      const token = localStorage.getItem('authToken');
+      const token = localStorage?.getItem('authToken');
       const response = await fetch('http://tanveer2719.pythonanywhere.com/api/sendotp/', {
         method: 'POST',
         headers: {
@@ -84,7 +84,7 @@ function BUY(){
       };
     
       try {
-        const token = localStorage.getItem('authToken');
+        const token = localStorage?.getItem('authToken');
         console.log(token);
         const response = await fetch('http://tanveer2719.pythonanywhere.com/api/confirmotp/', {
           method: 'POST',

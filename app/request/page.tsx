@@ -10,7 +10,7 @@ function Page() {
     e.preventDefault();
 
     try {
-        const token = localStorage.getItem('authToken');
+        const token = localStorage?.getItem('authToken');
       const response = await fetch('http://tanveer2719.pythonanywhere.com/api/request/', {
         method: 'POST',
         headers: {

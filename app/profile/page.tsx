@@ -18,7 +18,7 @@ function ProfilePage() {
   const [User, setUser] = useState<User | null>(null);
   const [selectedOption, setSelectedOption] = useState('notification');
 
-  const token = localStorage.getItem('authToken');
+  const token = localStorage?.getItem('authToken');
   
   useEffect(() => {
     fetch(`http://tanveer2719.pythonanywhere.com/api/getUser/`, {

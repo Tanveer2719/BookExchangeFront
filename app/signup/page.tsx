@@ -65,7 +65,7 @@ function SignupPage() {
     if (validatePhoneNumber(formData.phoneNo)) {
       // Valid Bangladeshi phone number, proceed with form submission
       try {
-        // const token = localStorage.getItem('authToken');
+        // const token = localStorage?.getItem('authToken');
 
         const response = await fetch('http://tanveer2719.pythonanywhere.com/api/signup/',{
           method: 'POST',
