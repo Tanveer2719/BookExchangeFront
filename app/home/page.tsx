@@ -37,7 +37,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const token = localStorage.getItem('authToken');
-    fetch('http://localhost:8000/api/getbooks/')
+    fetch('http://tanveer2719.pythonanywhere.com/api/getbooks/')
       .then(response => response.json())
       .then(data => {
         // Assuming data is in the correct format similar to fetchedBooks

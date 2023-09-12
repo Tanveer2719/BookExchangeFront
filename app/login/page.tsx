@@ -7,7 +7,7 @@ import { fetchUsers } from "../sanity/sanity-utils";
 async function fetchUserInfo() {
   const token = localStorage.getItem('authToken');
 
-  const response = await fetch('http://localhost:8000/api/userinfo/', {
+  const response = await fetch('http://tanveer2719.pythonanywhere.com/api/userinfo/', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function Page() {
     console.log("Password:", password);
     
     try {
-      const response = await fetch('http://localhost:8000/api/login/', {
+      const response = await fetch('http://tanveer2719.pythonanywhere.com/api/login/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -84,7 +84,7 @@ function addBookPage() {
     try {
     const token = localStorage.getItem('authToken');
 
-    const response = await fetch('http://localhost:8000/api/addbook/',{
+    const response = await fetch('http://tanveer2719.pythonanywhere.com/api/addbook/',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

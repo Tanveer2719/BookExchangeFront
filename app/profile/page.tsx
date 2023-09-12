@@ -21,7 +21,7 @@ function ProfilePage() {
   const token = localStorage.getItem('authToken');
   
   useEffect(() => {
-    fetch(`http://localhost:8000/api/getUser/`, {
+    fetch(`http://tanveer2719.pythonanywhere.com/api/getUser/`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

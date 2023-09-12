@@ -11,7 +11,7 @@ function Page() {
 
     try {
         const token = localStorage.getItem('authToken');
-      const response = await fetch('http://localhost:8000/api/request/', {
+      const response = await fetch('http://tanveer2719.pythonanywhere.com/api/request/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

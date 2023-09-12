@@ -26,7 +26,7 @@ function BookDetails() {
   console.log(id);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/getbook/${id}`)
+    fetch(`http://tanveer2719.pythonanywhere.com/api/getbook/${id}`)
       .then(response => response.json())
       .then(data => {
         setBook(data); // Assuming data is in the correct format for a single book
